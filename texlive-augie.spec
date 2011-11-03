@@ -1,3 +1,9 @@
+# revision 18948
+# category Package
+# catalog-ctan /fonts/augie
+# catalog-date 2006-12-29 12:26:56 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-augie
 Version:	20061229
 Release:	1
@@ -54,6 +60,7 @@ handwriting. The font is distributed in Adobe Type 1 format.
 %doc %{_texmfdistdir}/doc/latex/augie/other/Augie___.pfm
 %doc %{_texmfdistdir}/doc/latex/augie/other/augie___.inf
 %doc %{_texmfdistdir}/doc/latex/augie/vtex/augie.ali
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -64,3 +71,5 @@ handwriting. The font is distributed in Adobe Type 1 format.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
