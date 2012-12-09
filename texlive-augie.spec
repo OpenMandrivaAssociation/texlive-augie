@@ -61,3 +61,18 @@ handwriting. The font is distributed in Adobe Type 1 format.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20061229-2
++ Revision: 749412
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20061229-1
++ Revision: 717867
+- texlive-augie
+- texlive-augie
+- texlive-augie
+- texlive-augie
+- texlive-augie
+
