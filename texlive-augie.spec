@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-augie
 Version:	20061229
-Release:	3
+Release:	4
 Summary:	Calligraphic font for typesetting handwriting
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/augie
