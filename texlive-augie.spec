@@ -1,18 +1,12 @@
-# revision 18948
-# category Package
-# catalog-ctan /fonts/augie
-# catalog-date 2006-12-29 12:26:56 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-augie
-Version:	20190228
+Version:	61719
 Release:	1
 Summary:	Calligraphic font for typesetting handwriting
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/augie
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/augie.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/augie.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/augie.r61719.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/augie.doc.r61719.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ A calligraphic font for simulating American-style informal
 handwriting. The font is distributed in Adobe Type 1 format.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -54,25 +48,10 @@ handwriting. The font is distributed in Adobe Type 1 format.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20061229-2
-+ Revision: 749412
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20061229-1
-+ Revision: 717867
-- texlive-augie
-- texlive-augie
-- texlive-augie
-- texlive-augie
-- texlive-augie
-
