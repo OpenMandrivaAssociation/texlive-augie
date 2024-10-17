@@ -3,7 +3,7 @@ Version:	61719
 Release:	2
 Summary:	Calligraphic font for typesetting handwriting
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/augie
+URL:		https://www.ctan.org/tex-archive/fonts/augie
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/augie.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/augie.doc.r%{version}.tar.xz
